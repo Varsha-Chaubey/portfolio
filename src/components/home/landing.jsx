@@ -16,10 +16,10 @@ const Landing = () => {
           </span>
           <p className="introPara">
             I'm a dedicated React.js Developer with near about 2 years of
-            experience.<br/> Have Strong knowladge of HTML, CSS, Javascript.
+            experience.<br/> Have Strong knowladge of software developement.
           </p>
           <Link>
-            <button className="btn">
+            <button className="btn" onClick={() => window.location.href = 'mailto:varshachaubey63@gmail.com'}>
               <img src={btnImg} alt="" className="btnImg"/>
               Hire Me
             </button>
