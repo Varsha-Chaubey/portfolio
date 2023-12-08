@@ -3,7 +3,7 @@ import "./footer.css"
 const Footer = () => {
   return (
     <footer className='footer'>
-      Copyright &#169; 2023 Varsha Chaubey. All rights received.
+      Copyright &#169; 2023 &nbsp;<span style={{color:"green"}}>Varsha Chaubey</span>. &nbsp;All rights received.
     </footer>
   )
 }
