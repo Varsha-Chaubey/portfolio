@@ -1,3 +1,15 @@
+:root {
+  --mainColor: #606b56;
+  --secondaryColor: #515a48;
+  --borderColor: #161914;
+  --mainText: #fff;
+  --secondaryText: #eeeeee;
+  --themeDotBorder: #fff;
+  --previewBg: rgba(81, 90, 72, 0.8);
+  --previewShadow: #2a2f25;
+  --btnColor: #669966;
+}
+
 #skills {
   overflow: hidden;
   width: 100vw;
@@ -15,13 +27,16 @@
   font-weight: 600;
   padding-top: 3rem;
   margin-bottom: 1.5rem;
+  color: var(--mainText);
+  
 }
 
 .skillDesc {
-  font-weight: 300;
   font-size: 1rem;
   max-width: 50rem;
   padding: 0 2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 
 .toolBars {
@@ -29,10 +44,11 @@
   width: 100vw;
   max-width: 80%;
   text-align: left;
+  
 }
 
 .skillBars {
-  margin-top: 2rem;
+  margin-top: 0.7rem;
   display: flex;
   width: 100vw;
   flex-wrap: wrap;
@@ -42,31 +58,34 @@
 .skillBar {
   font-size: 0.8rem;
   font-weight: 200;
- margin-top: 0.8rem;
- margin-bottom: 0.8rem;
- margin-right: 0.5rem;
- margin-left: 0.5rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
   padding: 1rem;
   border-radius: 0.5rem;
-  background: rgb(50, 50, 50);
+  color: var(--mainText);
+  border: 1px solid var(--btnColor);
+  background: var(--mainColor);
   transition: border-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 .skillBar:hover,
 .skillBar:active {
-    border-color: green;
-    box-shadow: 0 0 10px rgba(0, 128, 0, 0.7);
-    cursor: pointer;
+  border-color: var(--borderColor);
+  box-shadow: 0 0 15px var(--borderColor);
+  cursor: pointer;
 }
 
 .skillBar:active {
-    transform: scale(0.95);
+  transform: scale(0.95);
 }
 .toolBar {
+  background: var(--mainColor);
   display: flex;
   margin: 1rem;
   padding: 1.5rem 2rem;
   border-radius: 0.5rem;
-  background: rgb(50, 50, 50);
+  border: 1px solid var(--btnColor);
 }
 .toolbarImg {
   object-fit: cover;
@@ -75,6 +94,9 @@
   margin-right: 2rem;
 }
 
+.toolBarText > h2{
+  color: var(--mainText);
+}
 .toolBarText > p {
   font-size: 0.8rem;
   font-weight: 200;

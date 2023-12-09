@@ -5,6 +5,7 @@ import trello from "../../Assets/images/trello.png";
 const Skills = () => {
   const skillsArr = [
     "React JS",
+    "Next JS",
     "Redux",
     "Hooks Management",
     "Context APIs",
@@ -58,7 +59,7 @@ const Skills = () => {
           })}
       </div>
 
-      <div className="toolBars">
+      <div className="toolBars" style={{marginTop:"0.5rem"}}>
         {toolData &&
           toolData.map((item, id) => {
             return (

@@ -18,33 +18,37 @@ const MyWork = () => {
       <h2 className="worksTitle">My PortFolio</h2>
       <span className="workDesc">
         Portfolio showcasing personal projects, thoughtfully crafted with HTML,
-        CSS, and React JS, <br />
+        CSS, and React JS, 
         reflecting a blend of creative design and interactive functionality.
       </span>
 
       <div className="workImgs">
         {portFolioData &&
           portFolioData.map((item, id) => {
+            console.log(item.img)
             return (
               id < visibleProjects && (
                 <div key={id} className="workItem">
-                  <div className="overlay">
-                    <p className="projectName">{item.projectName}</p>
-                    {item?.projectLink && (
-                      <a href={item.projectLink} target="_blank" className="projectLink" onClick={() => console.log(item.projectLink)}>
-                        Click here for demo
-                      </a>
-                    )}
-                    {item?.sourceCode && (
-                      <a href={item.sourceCode} className="projectLink" target="_blank">
-                        Click here for source code
-                      </a>
-                    )}
-                    {item?.status && (
-                      <p className="projectStatus">{item.status}</p>
-                    )}
-                  </div>
+      
                   <img src={item.img} alt="" className="worksImg" />
+                
+                <div className="workItemDesc">
+                  <p className="projectName">{item.projectName}</p>
+                  <p className="projectDesc">{item.desc}</p>
+                {item?.projectLink && (
+                  <a href={item.projectLink} target="_blank" className="projectLink" onClick={() => console.log(item.projectLink)}>
+                    Click here for demo
+                  </a>
+                )}
+                {/* {item?.sourceCode && (
+                  <a href={item.sourceCode} className="projectLink" target="_blank">
+                    Click here for source code
+                  </a>
+                )}
+                {item?.status && (
+                  <p className="projectStatus">{item.status}</p>
+                )} */}
+                </div>
                 </div>
               )
             );

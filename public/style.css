@@ -1,15 +1,27 @@
+:root {
+    --mainColor: #606b56;
+    --secondaryColor: #515a48;
+    --borderColor: #161914;
+    --mainText: #fff;
+    --secondaryText: #eeeeee;
+    --themeDotBorder: #fff;
+    --previewBg: rgba(81, 90, 72, 0.8);
+    --previewShadow: #2a2f25;
+    --btnColor: #669966;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     background: transparent;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 body{
-    background: rgb(30, 30, 30);
-    color: white;
+    background:var(--secondaryColor);
+    color:var(--secondaryText);
     overflow: hidden;
     overflow-y: scroll;
 }

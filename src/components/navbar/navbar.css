@@ -1,3 +1,16 @@
+:root {
+  --mainColor: #606b56;
+  --secondaryColor: #515a48;
+  --borderColor: #161914;
+  --mainText: #fff;
+  --secondaryText: #eeeeee;
+  --themeDotBorder: #fff;
+  --previewBg: rgba(81, 90, 72, 0.8);
+  --previewShadow: #2a2f25;
+  --btnColor: #669966;
+  --linkColor:#17a2b8;
+}
+
 .navbar {
   height: 5rem;
   width: 100vw;
@@ -10,7 +23,7 @@
   position: sticky;
   top: 0;
   z-index: 3;
-  background: rgb(30, 30, 30);
+  background: var(--secondaryColor);
 }
 
 .logo {
@@ -22,18 +35,20 @@
 .desktopMenuListItem {
   margin: 1rem;
   cursor: pointer;
+  letter-spacing: 1px;
+  font-weight: 600;
 }
 
 .desktopMenuListItem:hover {
-  color: green;
+  color: var(--mainText);
   padding-bottom: 0.5rem;
-  border-bottom: 3px solid green;
+  border-bottom: 2px solid var(--btnColor);
 }
 
 .desktopMenuButton {
-  border: 1px solid white;
-  background: white;
-  color: black;
+  border: 1px solid var(--btnColor);
+  background: var(--btnColor);
+  color: var(--mainText);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,9 +67,10 @@
 
 .desktopMenuButton:hover,
 .desktopMenuButton:active {
-  border-color: green;
-  box-shadow: 0 0 10px rgba(0, 128, 0, 0.7);
+  border-color: var(--borderColor);
+  box-shadow: 0 0 10px var(--borderColor);
   cursor: pointer;
+ 
 }
 
 .desktopMenuButton:active {
@@ -62,9 +78,11 @@
 }
 
 .active {
-  color: green;
+  color: var(--mainText);
   padding-bottom: 0.5rem;
-  border-bottom: 3px solid green;
+  font-size: 1.4rem;
+  border-bottom: 2px solid var(--btnColor);
+  border-top: 2px solid var(--btnColor);
 }
 
 .mobMenu {
@@ -84,14 +102,15 @@
   padding: 0.5rem;
   height: fit-content;
   min-width: 15rem;
-  background: rgb(40, 40, 40);
+  background: var(--mainColor);
   border-radius: 1rem;
+  border:1px solid var(--btnColor)
 }
 
 .listItem {
   padding: 0.5rem 3rem;
   margin: 0.25rem;
-  background: rgb(30, 30, 30);
+  background: var(--secondaryColor);
   cursor: pointer;
 }
 
@@ -99,10 +118,10 @@
   .mobMenu {
     display: flex;
   }
-  .desktopMenu{
+  .desktopMenu {
     display: none;
   }
-  .desktopMenuButton{
+  .desktopMenuButton {
     display: none;
   }
 }

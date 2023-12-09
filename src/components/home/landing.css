@@ -1,3 +1,15 @@
+:root {
+  --mainColor: #606b56;
+  --secondaryColor: #515a48;
+  --borderColor: #161914;
+  --mainText: #fff;
+  --secondaryText: #eeeeee;
+  --themeDotBorder: #fff;
+  --previewBg: rgba(81, 90, 72, 0.8);
+  --previewShadow: #2a2f25;
+  --btnColor: #669966;
+}
+
 #landing {
   height: calc(100vh-4rem);
   width: 100vw;
@@ -21,7 +33,7 @@
   font-weight: 100;
 }
 .introName {
-  color: green;
+  color: var(--mainText);
 }
 .introPara {
   font-size: medium;
@@ -31,10 +43,14 @@
 .bg {
   position: absolute;
   z-index: -1;
-  top: -4rem;
+  top: 4rem;
   right: 0;
   object-fit: cover;
-  height: 100vh;
+  height: 70vh;
+  width: 42%;
+  border: 2px solid var(--btnColor);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px var(--previewShadow);
 }
 .btnImg {
   object-fit: cover;
@@ -43,19 +59,21 @@
   width: 2rem;
 }
 .btn {
-  background: white;
+  color: var(--mainText);
+  background: var(--btnColor);
   margin: 1rem 0;
   padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 2rem;
   font-weight: 400;
+  border: 1px solid var(--btnColor);
   transition: border-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
 .btn:hover,
 .btn:active {
-    border-color: green;
-    box-shadow: 0 0 10px rgba(0, 128, 0, 0.7);
+  border-color: var(--borderColor);
+  box-shadow: 0 0 10px var(--previewShadow);
     cursor: pointer;
 }
 
@@ -63,9 +81,17 @@
     transform: scale(0.95);
 }
 @media screen and (max-width:800px){
-  .bg{
-    right: -15vw;
+  /* #landing{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
+  .bg{
+    position: none;
+    height: 50vh;
+    width: 50vw;
+  } */
   .hello{
     font-size: 4.5vw;
   }
@@ -79,9 +105,9 @@
 }
 
 .developerRole {
-  color: #28a745;
+  color: var(--mainText);
   overflow: hidden; 
-  border-right: 0.15em solid #28a745; 
+  border-right: 0.15em solid var(--previewShadow); 
   white-space: nowrap; 
   margin: 0; 
   letter-spacing: 0.10em; 
@@ -103,6 +129,6 @@
     border-color: transparent;
   }
   50% {
-    border-color: #28a745;
+    border-color: var(--previewShadow);
   }
 }

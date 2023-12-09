@@ -19,6 +19,7 @@ const Landing = () => {
   return (
     <>
       <section id="landing">
+      <img src={bg} alt="" className="bg" />
         <div className="landingContent">
           <span className="hello">Hello,</span>
           <span className="introText">
@@ -37,7 +38,7 @@ const Landing = () => {
             </button>
           </Link>
         </div>
-        <img src={bg} alt="" className="bg" />
+        
       </section>
     </>
   );
