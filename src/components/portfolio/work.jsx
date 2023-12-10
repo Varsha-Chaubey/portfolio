@@ -37,11 +37,12 @@ const MyWork = () => {
                     Click here for demo
                   </a>
                 )}
-                {/* {item?.sourceCode && (
+               {item?.sourceCode && (
                   <a href={item.sourceCode} className="projectLink" target="_blank">
                     Click here for source code
                   </a>
                 )}
+                 {/* 
                 {item?.status && (
                   <p className="projectStatus">{item.status}</p>
                 )} */}

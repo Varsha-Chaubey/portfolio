@@ -3,7 +3,6 @@ import logo from "../../Assets/images/logo.jpg";
 import mobMenu from "../../Assets/images/menu.png";
 import contact from "../../Assets/images/contact.jpg";
 import { Link } from "react-scroll";
-// import "./navbar.css";
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
@@ -54,7 +53,7 @@ const NavBar = () => {
             duration={500}
             className="desktopMenuListItem"
           >
-            Clients
+            Experience
           </Link>
         </div>
 

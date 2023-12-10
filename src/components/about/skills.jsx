@@ -1,5 +1,4 @@
 import React from "react";
-// import "./skills.css";
 import github from "../../Assets/images/git.png";
 import trello from "../../Assets/images/trello.png";
 const Skills = () => {

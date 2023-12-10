@@ -4,8 +4,6 @@
   --borderColor: #9ec8b9;
   --mainText: #fff;
   --secondaryText: #eeeeee;
-  --themeDotBorder: #fff;
-  --previewBg: rgba(81, 90, 72, 0.8);
   --previewShadow: #2a2f25;
   --btnColor: #5c8374;
   --linkColor: #17a2b8;
@@ -49,8 +47,8 @@ body {
 }
 .logo {
   object-fit: cover;
-  height: 8rem;
-  width: 5rem;
+  height: 4rem;
+  width: 4rem;
 }
 
 .desktopMenuListItem {
@@ -80,10 +78,10 @@ body {
 }
 
 .desktopMenuImg {
-  height: 1rem;
-  width: 1rem;
+  height: 1.5rem;
+  width: 2rem;
   object-fit: cover;
-  margin: 1rem;
+  margin: 0.7rem;
 }
 
 .desktopMenuButton:hover,
@@ -545,15 +543,13 @@ body {
 .name:hover,
 .email:hover,
 .msg:hover {
-  border: 2px solid var(--borderColor) !important;
-  box-shadow: 0 0 10px var(--previewShadow);
+  box-shadow: 0 0 5px var(--borderColor);
 }
 .name:focus,
 .email:focus,
 .msg:focus {
-  border: 2px solid var(--borderColor) !important;
   outline: none;
-  box-shadow: 0 0 10px var(--previewShadow);
+  box-shadow: 0 0 5px var(--borderColor);
 }
 .submitBtn {
   background: var(--btnColor);
@@ -685,5 +681,8 @@ body {
 @media screen and (max-width: 480px) {
   .landingContent {
     height: 45vh; 
+  }
+  .skillBar{
+    margin: 0.4rem !important;
   }
 }
