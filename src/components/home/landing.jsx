@@ -28,7 +28,7 @@ const Landing = () => {
           </span>
           <p className="introPara">
             I'm a dedicated React.js Developer with near about 2 years of
-            experience.<br/> Have Strong knowladge of software developement.
+            experience.<br/> Have strong knowledge of software developement.
           </p>
           <Link>
             <button className="btn" onClick={() => window.location.href = 'mailto:varshachaubey63@gmail.com'}>

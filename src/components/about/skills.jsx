@@ -40,7 +40,7 @@ const Skills = () => {
     <section id="skills">
       <span className="skillTitle">What I Do</span>
       <span className="skillDesc">
-        I'm a Results-driven and highly skilled professional with near about 2
+        I'm a Results-Driven and highly skilled professional with near about 2
         years of hands-on experience in web development, specializing in React.
         Adept at crafting efficient React components, integrating APIs, and
         ensuring seamless user experiences. Proficient in Redux, authentication,

@@ -46,9 +46,15 @@ body {
   color: var(--mainText);
 }
 .logo {
+  background: var(--mainColor);
+  border-radius: 50%;
   object-fit: cover;
-  height: 4rem;
-  width: 4rem;
+  height: 3rem;
+  width: 3rem;
+  padding: 0.4rem;
+  box-shadow: 0 0 10px var(--previewShadow);
+  border: 1px solid var(--btnColor);
+
 }
 
 .desktopMenuListItem {
@@ -56,6 +62,7 @@ body {
   cursor: pointer;
   letter-spacing: 1px;
   font-weight: 600;
+  
 }
 
 .desktopMenuListItem:hover {
@@ -130,6 +137,7 @@ body {
   margin: 0.25rem;
   background: var(--secondaryColor);
   cursor: pointer;
+  border-radius: 0.4rem;
 }
 
 @media screen and (max-width: 720px) {
@@ -293,8 +301,8 @@ body {
 .skillBar {
   font-size: 0.8rem;
   font-weight: 200;
-  margin-top: 0.2rem;
-  margin-bottom: 0.2rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
   margin-right: 0.3rem;
   margin-left: 0.3rem;
   padding: 1rem;

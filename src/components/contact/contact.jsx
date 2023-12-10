@@ -21,7 +21,7 @@ const Contact = () => {
         <p className="clientDesc">
           Over the past two years, I've had the privilege of contributing as a
           dedicated software developer for two esteemed companies, actively
-          engaged in server-side projects. Through collaborative efforts, I've
+          engaged in server-side projects. <br/>Through collaborative efforts, I've
           successfully delivered impactful solutions, demonstrating proficiency
           in crafting robust and scalable software tailored to the unique needs
           of each client.
