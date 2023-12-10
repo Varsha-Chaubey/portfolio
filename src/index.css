@@ -501,6 +501,7 @@ body {
   width: 100%;
   padding: 1rem;
   background: var(--mainColor);
+  border-radius: 0.4rem;
 }
 #clients {
   padding: 2rem;
@@ -661,6 +662,9 @@ body {
 
 .clientDetails {
   margin: 0.8rem 0 !important;
+}
+.contactForm {
+  padding: 1rem !important;
 }
 }
 
