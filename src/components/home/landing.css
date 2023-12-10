@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --mainColor: #606b56;
   --secondaryColor: #515a48;
   --borderColor: #161914;
@@ -81,17 +81,7 @@
     transform: scale(0.95);
 }
 @media screen and (max-width:800px){
-  /* #landing{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-  .bg{
-    position: none;
-    height: 50vh;
-    width: 50vw;
-  } */
+  
   .hello{
     font-size: 4.5vw;
   }
@@ -131,4 +121,4 @@
   50% {
     border-color: var(--previewShadow);
   }
-}
+} */

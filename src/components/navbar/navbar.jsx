@@ -3,7 +3,7 @@ import logo from "../../Assets/images/logo.jpg";
 import mobMenu from "../../Assets/images/menu.png";
 import contact from "../../Assets/images/contact.jpg";
 import { Link } from "react-scroll";
-import "./navbar.css";
+// import "./navbar.css";
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
 

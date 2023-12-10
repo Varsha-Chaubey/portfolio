@@ -1,8 +1,5 @@
 import React, { useState } from "react";
-import "./work.css";
-import college from "../../Assets/images/Capture.PNG";
-import food from "../../Assets/images/Capture2.PNG";
-import todo from "../../Assets/images/todo.avif";
+// import "./work.css";
 import { portFolioData } from "./portfolioData";
 const MyWork = () => {
   const [visibleProjects, setVisibleProjects] = useState(6);

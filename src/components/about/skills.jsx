@@ -1,5 +1,5 @@
 import React from "react";
-import "./skills.css";
+// import "./skills.css";
 import github from "../../Assets/images/git.png";
 import trello from "../../Assets/images/trello.png";
 const Skills = () => {
@@ -12,9 +12,9 @@ const Skills = () => {
     "Web Developement",
     "Javascript",
     "Authentication",
-    "ECMAScript 6",
-    "HTML/HTML5",
-    "CSS/CSS 3",
+    "ES6",
+    "HTML5",
+    "CSS3",
     "Bootstrap",
     "Tailwind CSS",
     "React Material UI",

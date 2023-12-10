@@ -4,7 +4,7 @@ import web from "../../Assets/images/webexcellis_logo.jpeg";
 import git from "../../Assets/images/git.png";
 import linkedin from "../../Assets/images/linkedin.png";
 import insta from "../../Assets/images/intsa.png";
-import "./contact.css";
+// import "./contact.css";
 const Contact = () => {
   const form = useRef();
   const [msgData, setMsgData] = useState({

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./landing.css";
+// import "./landing.css";
 import bg from "../../Assets/images/bg.jpg";
 import btnImg from "../../Assets/images/btnImg.png";
 import {Link} from'react-scroll';
