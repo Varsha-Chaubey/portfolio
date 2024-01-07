@@ -409,24 +409,27 @@ body {
 .workItemDesc {
   height: 10rem;
   text-align: left;
-  margin: 1rem;
+  margin: 0.5rem;
   color: var(--borderColor);
 }
 .projectName {
-  font-size: 1.5rem;
+  font-size: 1rem;
+  letter-spacing: 1px;
   color: #000;
+  font-weight: 500;
 }
 .projectDesc {
   color: #000;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   margin-top: 0.6rem;
   padding: 0 0.2rem;
   margin-bottom: 0.5rem;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
   overflow: hidden;
+  letter-spacing: 1px;
 }
 .projectLink {
   font-size: 0.9rem;
